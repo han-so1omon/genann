@@ -1,8 +1,9 @@
+CC=gcc
 CCFLAGS = -Wall -Wshadow -O2 -g
 LDLIBS = -lm
 
 
-all: test example1 example2 example3 example4
+all: test example1 example2 example3 example4 example5
 
 
 test: test.o genann.o
@@ -18,6 +19,7 @@ example3: example3.o genann.o
 
 example4: example4.o genann.o
 
+example5: example5.o genann.o
 
 clean:
 	$(RM) *.o
